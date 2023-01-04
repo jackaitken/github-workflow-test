@@ -5,7 +5,7 @@ on:
     types: [opened]
 
 jobs:
-  echo from different repo:
+  echo-from-different-repo:
     runs-on: ubuntu-latest
 
     steps:
