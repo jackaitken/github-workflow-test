@@ -7,10 +7,9 @@ on:
 jobs:
   echo-from-different-repo:
     runs-on: ubuntu-latest
-
+    name: A job to echo something from the composite action
     steps:
-      - name: Call the action
-        uses: jackaitken/github-actions-test/test-echo-something@v1
+      - uses: jackaitken/github-actions-test/test-echo-something@v1
         with:
           message: "Hello from the other side"
           name: "Adele"
