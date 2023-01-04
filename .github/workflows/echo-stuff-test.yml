@@ -1,0 +1,16 @@
+name: echo stuff
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  echo from different repo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Call the action
+        uses: jackaitken/github-actions-test/test-echo-something@v1
+        with:
+          message: "Hello from the other side"
+          name: "Adele"
