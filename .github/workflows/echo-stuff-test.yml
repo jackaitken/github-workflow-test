@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to echo something from the composite action
     steps:
-      - uses: jackaitken/github-actions-test/test-echo-something@v1
+      - uses: jackaitken/github-actions-test/test-echo-something@v2
         with:
           message: "Hello from the other side"
           name: "Adele"
